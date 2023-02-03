@@ -1,11 +1,13 @@
 const modulo=(()=>{
     'use strict'
     let deck=[];
+    let conta=1;
     const tipos=['C','D','H','S'],especiales=['A','J','Q','K'];
    
     const btnPedir=document.querySelector('#btnPedir'),
           btnNuevo=document.querySelector('#btnNuevo'),
           btnDetener=document.querySelector('#btnDetener');
+    const    btncount=document.querySelector('#contador');
 
     const divCartasJugadores=document.querySelectorAll('.divCartas');
         
@@ -178,6 +180,8 @@ const determinarGanador=()=>{
         turnoCompu(puntosJugadores[0]);
     });
     btnNuevo.addEventListener('click',()=>{
+        conta+=1;
+        btncount.innerHTML=`${conta}+`;
         
         inicializarJuego(2);
     

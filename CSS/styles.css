@@ -1,12 +1,14 @@
 .titulo{
     text-align: center;
-    background-color: black;
+    background-color: rgb(255, 238, 0); /* For browsers that do not support gradients */
+    background-image: radial-gradient(circle, rgb(48, 113, 66), rgb(82, 166, 85), rgb(152, 219, 233));
     color: white;
     padding: 20px;
 }
 html,body{
-    margin: 0px;
-    background-color: rgb(53, 75, 53);
+    margin: auto;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(circle, rgb(210, 24, 24), rgb(102, 17, 23), rgb(64, 37, 37));
     color: white;
     font-size: 25px;
     
@@ -22,7 +24,33 @@ html,body{
 }
 #jugador-cartas,#computadora-cartas{
     height: 220px;
+    margin: 10px;
+}
+button{
+    margin: 5px;
+}
+#btnNuevo{
+    margin-right: 20px;
 }
 
+#bloc{
+    width:max-content;
+    background-color: lightgreen;
+    border-radius: 25px;
+    color: rgb(98, 27, 92);
+    padding: 2px;
 
+    
+}
+h2{
+    font-style: oblique;
+    font-size: 30px;
+}
+small{
+    color: rgb(206, 23, 29);
+}
+i{
+    font-size: 35px;
+    
+}
 
